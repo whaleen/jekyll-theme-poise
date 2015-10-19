@@ -1,14 +1,29 @@
 # Site settings
 title: Poise
-email: your-email@domain.com
+email: joshuavaage@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  A multi-author Jekyll theme that is lightweight, and simple to use.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: whaleen
+github_username:  whaleen
 
 # Build settings
 markdown: kramdown
+
+sass:
+  style: compressed
+
+authors:
+  joshuavaage:
+    name: Joshua Vaage
+    title: Front End Developer
+    bio: Had some great experience deploying the elderly in Miami, FL. Spent two years selling bullwhips in Tampa, FL. Spent the 80's supervising the production of action figures on Wall Street. Developed several new methods for promoting Roombas with no outside help. Earned praise for investing in childrens books in Mexico. Spent 2001-2006 researching bullwhips for the underprivileged.
+    thumbImg: images/authors/jvaage.jpg
+    link: joshuavaage
+  sarasmith:
+    name: Sara Smith
+    title: Co-founder and Product Manager
+    bio: Spent college summers merchandising shaving cream in Fort Lauderdale, FL. A real dynamo when it comes to importing foreign currency in Prescott, AZ. Earned praised for my work merchandising g.i. joes in Gainesville, FL. Earned praised for my work analyzing squirt guns in Los Angeles, CA. Spent college summers merchandising glucose on the black market. Lead a team buying and selling shaving cream in Atlantic City, NJ.
+    thumbImg: images/authors/sara_smith.png
+    link: sarasmith

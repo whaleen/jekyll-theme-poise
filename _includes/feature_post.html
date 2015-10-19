@@ -1,0 +1,26 @@
+<div class="feature-post">
+<div class="container">
+  <div class="row">
+
+
+
+<h1 class="feature-post-title center">
+{% if page.title %}
+    <a href="{{ root_url }}{{ page.url }}">{{ page.title }}</a>
+{% endif %}
+{% if post.title %}
+    <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
+{% endif %}
+</h1>
+
+<p class="feature-post-excerpt center">{{ post.excerpt }}</p>
+
+<div class="feature-post-author center"><img src="/{{ site.authors[post.author].thumbImg }}" class="profile-image"/> </div>
+  <p class="center">by: <a href="/author/{{ site.authors[post.author].link }}">{{ site.authors[post.author].name }}</a></p>
+
+<div class="feature-post-button center"><a class="button" href="{{ root_url }}{{ post.url }}">Read</a></div>
+
+
+</div>
+</div>
+</div>

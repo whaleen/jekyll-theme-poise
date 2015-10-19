@@ -1,0 +1,144 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'jekyll-post' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.35
+4 verbose cache add [ 'jekyll-post', null ]
+5 verbose cache add name=undefined spec="jekyll-post" args=["jekyll-post",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'jekyll-post',
+6 verbose parsed url   path: 'jekyll-post',
+6 verbose parsed url   href: 'jekyll-post' }
+7 silly lockFile c2eacb20-jekyll-post jekyll-post
+8 verbose lock jekyll-post /Users/User1/.npm/c2eacb20-jekyll-post.lock
+9 silly lockFile c2eacb20-jekyll-post jekyll-post
+10 silly lockFile c2eacb20-jekyll-post jekyll-post
+11 verbose addNamed [ 'jekyll-post', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 888a0144-jekyll-post jekyll-post@
+14 verbose lock jekyll-post@ /Users/User1/.npm/888a0144-jekyll-post.lock
+15 silly addNameRange { name: 'jekyll-post', range: '*', hasData: false }
+16 verbose request where is /jekyll-post
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id 20e705e5ad10bda0
+19 verbose url raw /jekyll-post
+20 verbose url resolving [ 'https://registry.npmjs.org/', './jekyll-post' ]
+21 verbose url resolved https://registry.npmjs.org/jekyll-post
+22 verbose request where is https://registry.npmjs.org/jekyll-post
+23 info trying registry request attempt 1 at 00:13:46
+24 http GET https://registry.npmjs.org/jekyll-post
+25 http 200 https://registry.npmjs.org/jekyll-post
+26 silly registry.get cb [ 200,
+26 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 silly registry.get     etag: '"8WJVGKBEB6LT7RW474GXFTJ9L"',
+26 silly registry.get     'content-type': 'application/json',
+26 silly registry.get     'cache-control': 'max-age=60',
+26 silly registry.get     'content-length': '4341',
+26 silly registry.get     'accept-ranges': 'bytes',
+26 silly registry.get     date: 'Sun, 18 Oct 2015 07:13:46 GMT',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     age: '0',
+26 silly registry.get     connection: 'keep-alive',
+26 silly registry.get     'x-served-by': 'cache-lax1435-LAX',
+26 silly registry.get     'x-cache': 'MISS',
+26 silly registry.get     'x-cache-hits': '0',
+26 silly registry.get     'x-timer': 'S1445152426.660550,VS0,VE49',
+26 silly registry.get     vary: 'Accept' } ]
+27 silly addNameRange number 2 { name: 'jekyll-post', range: '*', hasData: true }
+28 silly addNameRange versions [ 'jekyll-post', [ '0.0.0', '0.0.2' ] ]
+29 verbose addNamed [ 'jekyll-post', '0.0.2' ]
+30 verbose addNamed [ '0.0.2', '0.0.2' ]
+31 silly lockFile 41343c75-jekyll-post-0-0-2 jekyll-post@0.0.2
+32 verbose lock jekyll-post@0.0.2 /Users/User1/.npm/41343c75-jekyll-post-0-0-2.lock
+33 silly lockFile a9b8f2a1-ekyll-post-jekyll-post-0-0-2-tgz https://registry.npmjs.org/jekyll-post/-/jekyll-post-0.0.2.tgz
+34 verbose lock https://registry.npmjs.org/jekyll-post/-/jekyll-post-0.0.2.tgz /Users/User1/.npm/a9b8f2a1-ekyll-post-jekyll-post-0-0-2-tgz.lock
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/jekyll-post/-/jekyll-post-0.0.2.tgz',
+35 verbose addRemoteTarball   '828fe7860646b454dc6da5b5d654d4cf3610a6e8' ]
+36 info retry fetch attempt 1 at 00:13:46
+37 verbose fetch to= /var/folders/m1/n8tc5jkn0l9ctqy9f71xjj3m0000gp/T/npm-11271-MbU9xDR9/registry.npmjs.org/jekyll-post/-/jekyll-post-0.0.2.tgz
+38 http GET https://registry.npmjs.org/jekyll-post/-/jekyll-post-0.0.2.tgz
+39 http 200 https://registry.npmjs.org/jekyll-post/-/jekyll-post-0.0.2.tgz
+40 silly lockFile a9b8f2a1-ekyll-post-jekyll-post-0-0-2-tgz https://registry.npmjs.org/jekyll-post/-/jekyll-post-0.0.2.tgz
+41 silly lockFile a9b8f2a1-ekyll-post-jekyll-post-0-0-2-tgz https://registry.npmjs.org/jekyll-post/-/jekyll-post-0.0.2.tgz
+42 silly lockFile 41343c75-jekyll-post-0-0-2 jekyll-post@0.0.2
+43 silly lockFile 41343c75-jekyll-post-0-0-2 jekyll-post@0.0.2
+44 silly lockFile 888a0144-jekyll-post jekyll-post@
+45 silly lockFile 888a0144-jekyll-post jekyll-post@
+46 silly resolved [ { name: 'jekyll-post',
+46 silly resolved     version: '0.0.2',
+46 silly resolved     description: 'A Simple Command Line Helper for Jekyll',
+46 silly resolved     main: 'post.js',
+46 silly resolved     scripts: { test: 'echo "Error: no test specified" && exit 1' },
+46 silly resolved     repository:
+46 silly resolved      { type: 'git',
+46 silly resolved        url: 'git://github.com/iansinnott/jekyll-post.git' },
+46 silly resolved     bin: { post: './post.js' },
+46 silly resolved     keywords: [ 'jekyll', 'blog' ],
+46 silly resolved     author: { name: 'Ian Sinnott', email: 'ian@iansinnott.com' },
+46 silly resolved     license: 'MIT',
+46 silly resolved     bugs: { url: 'https://github.com/iansinnott/jekyll-post/issues' },
+46 silly resolved     homepage: 'https://github.com/iansinnott/jekyll-post',
+46 silly resolved     dependencies:
+46 silly resolved      { commander: '^2.2.0',
+46 silly resolved        lodash: '^2.4.1',
+46 silly resolved        moment: '^2.7.0',
+46 silly resolved        shelljs: '^0.3.0',
+46 silly resolved        tinycolor: '0.0.1' },
+46 silly resolved     gitHead: '2ce6183720175d05d9a12f6e1300457c1531e86b',
+46 silly resolved     _id: 'jekyll-post@0.0.2',
+46 silly resolved     _shasum: '828fe7860646b454dc6da5b5d654d4cf3610a6e8',
+46 silly resolved     _from: 'jekyll-post@',
+46 silly resolved     _npmVersion: '2.7.5',
+46 silly resolved     _nodeVersion: '0.12.2',
+46 silly resolved     _npmUser: { name: 'iansinnott', email: 'ian@iansinnott.com' },
+46 silly resolved     dist:
+46 silly resolved      { shasum: '828fe7860646b454dc6da5b5d654d4cf3610a6e8',
+46 silly resolved        tarball: 'http://registry.npmjs.org/jekyll-post/-/jekyll-post-0.0.2.tgz' },
+46 silly resolved     maintainers: [ [Object] ],
+46 silly resolved     directories: {},
+46 silly resolved     _resolved: 'https://registry.npmjs.org/jekyll-post/-/jekyll-post-0.0.2.tgz' } ]
+47 info install jekyll-post@0.0.2 into /usr/local/lib
+48 info installOne jekyll-post@0.0.2
+49 verbose lib/node_modules/jekyll-post unbuild
+50 verbose tar unpack /Users/User1/.npm/jekyll-post/0.0.2/package.tgz
+51 silly lockFile 6c73a0a2-cal-lib-node-modules-jekyll-post tar:///usr/local/lib/node_modules/jekyll-post
+52 verbose lock tar:///usr/local/lib/node_modules/jekyll-post /Users/User1/.npm/6c73a0a2-cal-lib-node-modules-jekyll-post.lock
+53 silly lockFile aa2acda0-pm-jekyll-post-0-0-2-package-tgz tar:///Users/User1/.npm/jekyll-post/0.0.2/package.tgz
+54 verbose lock tar:///Users/User1/.npm/jekyll-post/0.0.2/package.tgz /Users/User1/.npm/aa2acda0-pm-jekyll-post-0-0-2-package-tgz.lock
+55 silly gunzTarPerm modes [ '755', '644' ]
+56 error Error: EACCES, mkdir '/usr/local/lib/node_modules/jekyll-post'
+56 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/jekyll-post']
+56 error   errno: 3,
+56 error   code: 'EACCES',
+56 error   path: '/usr/local/lib/node_modules/jekyll-post',
+56 error   fstream_type: 'Directory',
+56 error   fstream_path: '/usr/local/lib/node_modules/jekyll-post',
+56 error   fstream_class: 'DirWriter',
+56 error   fstream_stack:
+56 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+56 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+56 error      'Object.oncomplete (fs.js:108:15)' ] }
+57 error Please try running this command again as root/Administrator.
+58 error System Darwin 14.1.0
+59 error command "node" "/usr/local/bin/npm" "install" "-g" "jekyll-post"
+60 error cwd /Users/User1/Desktop/Skeleton-2.0-2.4/skeleton
+61 error node -v v0.10.35
+62 error npm -v 1.4.28
+63 error path /usr/local/lib/node_modules/jekyll-post
+64 error fstream_path /usr/local/lib/node_modules/jekyll-post
+65 error fstream_type Directory
+66 error fstream_class DirWriter
+67 error code EACCES
+68 error errno 3
+69 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/jekyll-post'
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+70 error fstream_stack Object.oncomplete (fs.js:108:15)
+71 verbose exit [ 3, true ]

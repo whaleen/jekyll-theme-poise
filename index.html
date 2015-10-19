@@ -2,22 +2,22 @@
 layout: default
 ---
 
-<div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <!-- Feature Post -->
+        {% assign post = site.posts.first %}
+        {% assign content = post.content %}
+        {% include feature_post.html %}
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
+<div class="earlier-posts">
+<div class="container">
+<div class="row">
+      <div class="offset-by-one ten columns">
+  <h3 class="">Earlier Posts</h3>
+  <ul>
+{% for post in site.posts offset: 1 limit: 5 %}
+<li><img src="/{{ site.authors[post.author].thumbImg }}" class="earlier-posts-profile-image"/>  <a href="{{ post.url }}">{{ post.title }}</a> by: {{ site.authors[post.author].name }}</li>
     {% endfor %}
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+</div>
+</div>
 </div>

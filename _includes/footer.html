@@ -1,14 +1,35 @@
+<hr />
 <footer class="site-footer">
   <div class="container">
     <div class="row">
-    <h2 class="footer-heading">{{ site.title }}</h2>
+      <div class="row">
+        <div class="one-half column">
 
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
 
-        <p class="text">{{ site.description }}</p>
+          &nbsp;
+
+        </div>
+        <div class="one-half column">
+          <h3 class="footer-heading">{{ site.title }}</h3>
+
+            <p class="text">{{ site.description }}</p>
+
+          <p class="rss-subscribe">subscribe to {{ site.title }} <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+          <ul class="nav navbar-nav">
+            {% comment %}Jekyll can now sort on custom page key{% endcomment %}
+            {% assign pages = site.pages | sort: 'weight' %}
+            {% for p in pages %}
+              {% if p.menu == 'main' %}
+                <li{% if p.url == page.url %} class="active"{% endif %}>
+                   <a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+
+        </div>
+    </div>
+
     </div>
   </div>
 </footer>

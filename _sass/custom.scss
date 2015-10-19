@@ -1,0 +1,46 @@
+// Masthead
+a.site-title {text-decoration: none; color: #eee;}
+
+// Feature Post
+div.feature-post h1 > a {
+  text-decoration: none; color: #444;
+}
+
+
+div.feature-post {
+border-top: 1px solid #eee;
+border-bottom: 1px solid #eee;
+}
+
+
+.feature-post-button {text-align: center;}
+
+
+
+.site-header {padding: 24px 0 0 0;}
+
+div.feature-post, div.earlier-posts {
+  padding: 24px 0 24px 0;
+}
+
+
+nav.nav-collapse > ul {list-style: none;}
+
+
+.center {text-align: center;}
+
+
+
+.profile-image {
+border-radius:50% 50% 50% 50%;
+width:96px;
+height:96;
+}
+
+.earlier-posts-profile-image {
+border-radius:50% 50% 50% 50%;
+width:48px;
+height:48;
+}
+
+.feature-post-excerpt {font-size: 2.2rem; font-weight: 100;}

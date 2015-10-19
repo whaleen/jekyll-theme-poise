@@ -45,7 +45,8 @@ $link-color: #1eaedb !default;
 $font-color: #222 !default;
 
 // Typography
-$font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-headings: Helvetica, Arial, sans-serif !default;
+$font-family-body: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
 //Grid Variables
 $container-width: 960px !default;
@@ -178,7 +179,7 @@ body {
   font-size: 1.5em; // currently ems cause chrome bug misinterpreting rems on body element
   line-height: 1.6;
   font-weight: 400;
-  font-family: $font-family;
+  font-family: $font-family-body;
   color: $font-color;
 }
 
@@ -189,6 +190,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 2rem;
   font-weight: 300;
+  font-family: $font-family-headings;
 }
 
 h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem;  }
