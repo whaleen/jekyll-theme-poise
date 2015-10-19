@@ -3,6 +3,7 @@ layout: default
 ---
 
 <div class="container">
+
   <div class="row">
 
     <div class="offset-by-one ten columns">
@@ -12,18 +13,26 @@ layout: default
   </header>
   <article class="post-content">
     {{ content }}
+    <hr />
   </article>
 
+  </div>
+  </div>
 
-<hr />
-  <div class="col-sm-6 author">
-  <img src="/{{ site.authors[page.author].thumbImg }}" class="profile-image"/>
-  <a href="/author/{{ site.authors[page.author].link }}" class="section-title author-name">{{ site.authors[page.author].name }}</a>
-  <p class="author-bio">{{site.authors[page.author].bio}}</p>
-</div>
-<hr />
+
+<!-- Post Author Footer -->
+<div class="row">
+
+  <div class="offset-by-one two columns col-sm-2 author">
+<a href="/author/{{ site.authors[page.author].link }}" class="section-title author-name">{{ site.authors[page.author].name }}</a>
+    <img src="/{{ site.authors[page.author].thumbImg }}" class="profile-image"/>
+  </div>
+
+  <div class="eight columns col-sm-6 author">
+
+    <p class="author-bio">{{site.authors[page.author].bio}}</p>
+  </div>
 
 </div>
 
-</div>
 </div>

@@ -1,11 +1,6 @@
 ---
 layout: default
-title: Sara Smith
-permalink: /author/sarasmith/
-author: sarasmith
-menu: authors
 ---
-
 
 <div class="container">
   <div class="row">
@@ -13,7 +8,7 @@ menu: authors
     <div class="ten columns offset-by-one">
 
       <h2>{{ site.authors[page.author].name }}</h2>
-      {% assign author = site.posts | where: "author", "sarasmith" %}
+      {% assign author = site.posts | where: "author", "joshuavaage" %}
       <ul>
       {% for post in author %}
       <li><a href="{{ post.url }}">{{ post.title }}</a></li>

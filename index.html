@@ -12,12 +12,14 @@ layout: default
 <div class="container">
 <div class="row">
       <div class="offset-by-one ten columns">
-  <h3 class="">Earlier Posts</h3>
-  <ul>
-{% for post in site.posts offset: 1 limit: 5 %}
-<li><img src="/{{ site.authors[post.author].thumbImg }}" class="earlier-posts-profile-image"/>  <a href="{{ post.url }}">{{ post.title }}</a> by: {{ site.authors[post.author].name }}</li>
-    {% endfor %}
-  </ul>
-</div>
+        <h3>Earlier Posts</h3>
+        <ul class="earler-posts">
+          {% for post in site.posts offset: 1 limit: 4 %}
+          <li><img src="/{{ site.authors[post.author].thumbImg }}" class="earlier-posts-profile-image"/>
+            <a href="{{ post.url }}">{{ post.title }}</a><br />by: {{ site.authors[post.author].name }}</li>
+          {% endfor %}
+          <li><a href="/archive/">More in Archive</a>
+        </ul>
+      </div>
 </div>
 </div>
