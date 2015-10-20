@@ -19,17 +19,23 @@ authors:
     handle: joshuavaage
     name: Joshua Vaage
     job_title: Front End Developer
-    bio: Spent the 80's supervising the production of action figures on Wall Street. Developed several new methods for promoting Roombas with no outside help.
+    bio: Spent the 90's supervising the production of action figures on Wall Street. Developed several new methods for charging Roombas with no outside help.
     thumbImg: images/authors/joshuavaage.png
   sarasmith:
     handle: sarasmith
     name: Sara Smith
     job_title: Co-founder and Product Manager
-    bio: Earned praised for my work analyzing squirt guns in Los Angeles, CA. Spent college summers merchandising glucose on the black market. Lead a team buying and selling shaving cream in Atlantic City, NJ.
+    bio: Earned praised for her work analyzing squirt guns in Los Angeles, CA. Spent college summers merchandising glucose in Atlantic City, NJ.
     thumbImg: images/authors/sarasmith.png
   kristinaherman:
     handle: kristinaherman
     name: Kristina Herman
     job_title: Co-founder and Product Manager
-    bio: Developed several new methods for implementing childrens books in Naples, FL. Was quite successful at getting to know cabbage in Edison, NJ.
+    bio: Developed several new methods for reading childrens books in Naples, FL. Was quite successful at getting to know cabbage at university.
     thumbImg: images/authors/kristinaherman.png
+  timothykrapel:
+    handle: timothykrapel
+    name: Timothy Krapel
+    job_title: Co-founder and Product Manager
+    bio: Had a brief career getting to know chess sets in Miami, FL. Had some great experience developing pogo sticks in Cuba. In 2008 I was promoting deodorant in Tampa, FL. Spent 2001-2008 creating marketing channels for bagpipes in Deltona, FL.
+    thumbImg: images/authors/timothykrapel.png

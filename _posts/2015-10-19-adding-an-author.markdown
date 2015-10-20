@@ -2,7 +2,7 @@
 layout: post
 title:  "New Poise Author"
 date:   2015-10-20 18:49:14
-author: joshuavaage
+author: timothykrapel
 excerpt: Add a new Author to Poise. They'll get their own archive page and a lovely profile.
 ---
 

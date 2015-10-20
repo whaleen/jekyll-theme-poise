@@ -10,9 +10,11 @@ layout: default
 
 <!-- Author name  -->
       <h1 class="center">{{ site.authors[page.handle].name }}</h1>
+      <p class="center">{{ site.authors[page.handle].job_title }}</p>
+
       <p class="author-page-bio center">{{ site.authors[page.handle].bio }}</p>
             <p class="center"><img src="/{{ site.authors[page.handle].thumbImg }}" class="profile-image"/></p>
-
+<hr />
 <!-- Author posts  -->
       <ul class="author-posts center">
       {% for p in site.posts do %}
