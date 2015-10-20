@@ -2,8 +2,8 @@
 layout: post
 title:  "New Poise Author"
 date:   2015-10-20 18:49:14
-author: sarasmith
-excerpt: This is a short but detailed procedure.
+author: joshuavaage
+excerpt: Add a new Author to Poise. They'll get their own archive page and a lovely profile.
 ---
 
 
@@ -28,28 +28,40 @@ authors:
     thumbImg: images/authors/sara_smith.png
 {% endhighlight %}
 
-So that's what two authors looks like in the `_config.yml` file. Copy the formatting of an existing author to create a new author and as time goes on you can update these author details as needed. Be sure to follow the formatting of the existing authors including indentations.
+So that's what two authors looks like in the `_config.yml` file. Copy the formatting of an existing author to create a new author and as time goes on you can update these author details as needed. Be sure to follow the formatting of the existing authors, including indentations.
 
 ##### Step 2: Profile Image
 
-Now you'll need to add the new author's profile image to the `/images/author/` directory that you referenced in the `_config` file.
+Now you'll need to add the new author's profile image to the `/images/author/` directory that you referenced in the `_config` file in the previous step. It is recommended you use an image no less than 150X150 pixels square.
 
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+##### Step 3: Create Author Page
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+Create a file in the `/author/` directory named after your new author. See the following author file's contents?
 
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+{% highlight yaml %}
+---
+layout: author
+menu: authors
+permalink: /author/joshuavaage/
+title: Joshua Vaage
+handle: joshuavaage
+---
 {% endhighlight %}
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
+Fairly simple. That's what your author file should look like. No more, no less. You just created the author's new page. No need to change this file ever again. Author details updates will only need to be done in the `_config.yml` file.
 
-[jekyll]:      http://jekyllrb.com
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-help]: https://github.com/jekyll/jekyll-help
+##### Step 4: Managing Author's Posts
+
+Please, now this is very important. See `handle: joshuavaage` in the author file in the previous step? The `handle` you see there needs to match what you use as your `author` in your posts. This is what a post looks like:
+
+{% highlight yaml %}
+---
+layout: post
+title:  "New Poise Author"
+date:   2015-10-20 18:49:14
+author: joshuavaage
+excerpt: This is a short but detailed procedure.
+---
+{% endhighlight %}
+
+The `author` is `joshuavaage` in this post and the `handle` is `joshuavaage` in `/author/joshuavaage`. These being the same insures you author's posts will show up on their author page and elswhere.
