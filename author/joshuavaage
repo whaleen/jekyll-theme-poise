@@ -1,8 +1,7 @@
 ---
 layout: author
-title: Joshua Vaage
-permalink: /author/joshuavaage/
-author: joshuavaage
 menu: authors
-thing: dude
+permalink: /author/joshuavaage/
+title: Joshua Vaage
+handle: joshuavaage #
 ---

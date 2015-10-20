@@ -11,15 +11,26 @@ layout: default
 <div class="earlier-posts">
 <div class="container">
 <div class="row">
-      <div class="offset-by-one ten columns">
+
+      <div class="offset-by-four four columns center">
         <h3>Earlier Posts</h3>
         <ul class="earler-posts">
           {% for post in site.posts offset: 1 limit: 4 %}
-          <li><img src="/{{ site.authors[post.author].thumbImg }}" class="earlier-posts-profile-image"/>
-            <a href="{{ post.url }}">{{ post.title }}</a><br />by: {{ site.authors[post.author].name }}</li>
+          <li><h5><a href="{{ post.url }}">{{ post.title }}</a></h5>
+            <p>{{ post.excerpt }}</p>
+            <img src="/{{ site.authors[post.author].thumbImg }}" class="earlier-posts-profile-image"/><br />
+            by: <a href="/author/{{ site.authors[post.author].handle }}">{{ site.authors[post.author].name }}</a>
+            <hr />
+          </li>
+
           {% endfor %}
-          <li><a href="/archive/">More in Archive</a>
+
+          <li><a href="/archive/">Archive</a>
         </ul>
       </div>
+
+
+
+
 </div>
 </div>

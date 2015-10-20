@@ -3,7 +3,7 @@ layout: post
 title:  "Welcome to Jekyll!"
 date:   2015-10-17 18:49:14
 author: joshuavaage
-excerpt: Jekyll is great to use. This is a theme for Jekyll. You should buy it and use it.
+excerpt: You and your team are now ready to begin publishing like bosses.  
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

@@ -6,4 +6,4 @@ author: sarasmith
 excerpt: Does Poise avoid Javascript for any special reason?
 ---
 
-Not really. The theme was built to function entirely reliant on Jekyll to build the static end prodcut and HTML and CSS to make the theme responsive, attractive to look at, intuative to use, and distraction free.
+Not really. But, it's one less thing to load into the browser. That is part of what makes the theme so "light". 

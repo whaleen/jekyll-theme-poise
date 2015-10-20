@@ -1,21 +1,14 @@
-<hr />
 <footer class="site-footer">
   <div class="container">
     <div class="row">
       <div class="row">
-        <div class="one-half column">
 
-
-          &nbsp;
-
-        </div>
-        <div class="one-half column">
-          <h3 class="footer-heading">{{ site.title }}</h3>
+        <div class="four columns offset-by-four center">
+          <h3 class="footer-heading"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h3>
 
             <p class="text">{{ site.description }}</p>
 
-          <p class="rss-subscribe">subscribe to {{ site.title }} <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-          <ul class="nav navbar-nav">
+          <ul class="nav">
             {% comment %}Jekyll can now sort on custom page key{% endcomment %}
             {% assign pages = site.pages | sort: 'weight' %}
             {% for p in pages %}
@@ -26,6 +19,8 @@
               {% endif %}
             {% endfor %}
           </ul>
+
+          <p class="rss-subscribe">subscribe to {{ site.title }} <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
         </div>
     </div>

@@ -1,30 +1,35 @@
 ---
 layout: default
 ---
+<!-- This layout is located in /_layouts/author.html. It will display various details about an author that have been provided in the Front Matter of an author file in /authors/authorname -->
 
 <div class="container">
   <div class="row">
 
     <div class="ten columns offset-by-one">
 
-      <h2>{{ site.authors[page.author].name }}</h2>
-      {% assign author = site.posts | where: "author", "joshuavaage" %}
-      <ul>
-      {% for post in author %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+<!-- Author name  -->
+      <h1 class="center">{{ site.authors[page.handle].name }}</h1>
+      <p class="author-page-bio center">{{ site.authors[page.handle].bio }}</p>
+            <p class="center"><img src="/{{ site.authors[page.handle].thumbImg }}" class="profile-image"/></p>
+
+<!-- Author posts  -->
+      <ul class="author-posts center">
+      {% for p in site.posts do %}
+        {% if p.author == page.handle %}
+
+
+          <li>
+<p>{{ p.date | date: "%b %-d, %Y" }}</p>
+            <h4><a href="{{ p.url }}">{{ p.title }}</a></h4>
+{{ p.excerpt }}
+<hr />
+          </li>
+        {% endif %}
       {% endfor %}
       </ul>
 
-
-      <div class="col-sm-6 author">
-      <img src="/{{ site.authors[page.author].thumbImg }}" class="profile-image"/>
-      <a href="/author/{{ site.authors[page.author].link }}" class="section-title author-name">{{ site.authors[page.author].name }}</a>
-      <p class="author-bio">{{site.authors[page.author].bio}}</p>
     </div>
-
-
-    </div>
-
 
 </div>
 </div>

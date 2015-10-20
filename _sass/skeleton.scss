@@ -42,11 +42,11 @@ $primary-color: #33c3f0 !default;
 $secondary-color: lighten($dark-grey, 13.5%) !default;
 $border-color: #bbb !default;
 $link-color: #1eaedb !default;
-$font-color: #222 !default;
+$font-color: #444 !default;
 
 // Typography
-$font-family-headings: Helvetica, Arial, sans-serif !default;
-$font-family-body: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-headings: 'Istok Web', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-body: 'Cantarell', 'Istok Web', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
 //Grid Variables
 $container-width: 960px !default;

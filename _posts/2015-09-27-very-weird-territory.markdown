@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Very Weird Territory!"
+title:  "Meaningful Labor!"
 date:   2015-09-27 18:49:14
 author: joshuavaage
-excerpt: Fusce eget orci a orci congue vestibulum. Ut dolor diam, elementum et vestibulum eu, porttitor vel elit. Curabitur venenatis pulvinar tellus gravida ornare.
+excerpt: I enjoy your site very much.
 ---
 Vivamus fermentum semper porta. Nunc diam velit, adipiscing ut tristique vitae, sagittis vel odio. Maecenas convallis ullamcorper ultricies. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, id fringilla sem nunc vel mi. Nam dictum, odio nec pretium volutpat, arcu ante placerat erat, non tristique elit urna et turpis. Quisque mi metus, ornare sit amet fermentum et, tincidunt et orci.
 

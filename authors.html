@@ -5,7 +5,6 @@ permalink: /authors/
 menu: main
 ---
 
-
 <div class="container">
   <div class="row">
 
@@ -17,7 +16,6 @@ menu: main
         {% assign pages = site.pages | sort: 'weight' %}
         {% for p in pages %}
         {% if p.menu == 'authors' %}
-        {{ p.thing }}
         <li{% if p.url == page.url %} class="active"{% endif %}>
          <a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
         </li>
