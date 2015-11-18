@@ -14,7 +14,7 @@ menu: main
             {% assign pages = site.pages | sort: 'weight' %}
             {% for p in pages %}
             {% if p.menu == 'authors' %}
-            <div class="one-half column category">
+            <div class="one-third column">
              <a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
             </div>
             {% endif %}
