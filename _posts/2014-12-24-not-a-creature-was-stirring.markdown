@@ -2,7 +2,7 @@
 layout: post
 title:  "Not A Creature"
 date:   2014-12-24 18:49:14
-author: sarasmith
+author: kristinaherman
 excerpt: Does Poise avoid Javascript for any special reason?
 ---
 

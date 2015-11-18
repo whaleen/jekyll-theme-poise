@@ -5,25 +5,20 @@ permalink: /authors/
 menu: main
 ---
 
-<div class="container">
-  <div class="row">
-
-    <div class="ten columns offset-by-one">
 
       <h2>Authors</h2>
 
-      <ul class="nav navbar-nav">
-        {% assign pages = site.pages | sort: 'weight' %}
-        {% for p in pages %}
-        {% if p.menu == 'authors' %}
-        <li{% if p.url == page.url %} class="active"{% endif %}>
-         <a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
-        </li>
-        {% endif %}
-        {% endfor %}
-      </ul>
+        <div class="container">
+          <div class="row">
 
-</div>
+            {% assign pages = site.pages | sort: 'weight' %}
+            {% for p in pages %}
+            {% if p.menu == 'authors' %}
+            <div class="one-third column">
+             <a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
+            </div>
+            {% endif %}
+            {% endfor %}
 
-</div>
-</div>
+          </div>
+        </div>

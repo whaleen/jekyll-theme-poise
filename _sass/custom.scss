@@ -34,9 +34,9 @@ border-radius:50% 50% 50% 50%;
 width:96px;
 height:96;
 }
-
+.button {font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica;}
 .feature-post-excerpt, .author-page-bio {
-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica;
+font-family: "Merriweather", "Helvetica Neue Light", "Helvetica Neue", Helvetica;
   font-size: 2.3rem; font-weight: 100;}
 
 ul.earler-posts, .author-posts {list-style: none;}
@@ -59,6 +59,8 @@ blockquote {
   border-left: 1px solid #eee;
 }
 
-p {
+p, ul {
   text-indent: 1.5em;
 }
+
+.author-posts  > ul {list-style: none; text-align: center;}

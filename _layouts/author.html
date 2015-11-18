@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-<!-- This layout is located in /_layouts/author.html. It will display various details about an author that have been provided in the Front Matter of an author file in /authors/authorname -->
 
 <div class="container">
   <div class="row">
@@ -9,25 +8,34 @@ layout: default
     <div class="ten columns offset-by-one">
 
 <!-- Author name  -->
+    <section class="author-profile">
       <h1 class="center">{{ site.authors[page.handle].name }}</h1>
+      <p class="center">{{ site.authors[page.handle].job_title }}</p>
+
       <p class="author-page-bio center">{{ site.authors[page.handle].bio }}</p>
-            <p class="center"><img src="/{{ site.authors[page.handle].thumbImg }}" class="profile-image"/></p>
+      <p class="center"><img src="/{{ site.authors[page.handle].thumbImg }}" class="profile-image"/></p>
+      <hr />
+    </section>
 
 <!-- Author posts  -->
-      <ul class="author-posts center">
-      {% for p in site.posts do %}
+      <section class="author-posts">
+      <ul>
+        {% for p in site.posts do %}
         {% if p.author == page.handle %}
-
-
-          <li>
-<p>{{ p.date | date: "%b %-d, %Y" }}</p>
-            <h4><a href="{{ p.url }}">{{ p.title }}</a></h4>
-{{ p.excerpt }}
-<hr />
-          </li>
+          <article>
+            <li>
+              <header>
+                <p><time pubdate datetime="{{ p.date }}">{{ p.date | date: "%b %-d, %Y" }}</time></p>
+                <h4><a href="{{ p.url }}">{{ p.title }}</a></h4>
+              </header>
+              <p>{{ p.excerpt }}</p>
+              <hr />
+            </li>
+          <article>
         {% endif %}
       {% endfor %}
       </ul>
+      </section>
 
     </div>
 
