@@ -5,8 +5,8 @@ description: > # this means to ignore newlines until "baseurl:"
   A Multi-Author Jekyll theme that is lightweight, simple to use and hopefully very readable.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://whaleen.github.com/poise" # the base hostname & protocol for your site
-twitter_username: whaleen
-github_username:  whaleen
+
+
 
 # Build settings
 markdown: kramdown
@@ -14,28 +14,42 @@ markdown: kramdown
 sass:
   style: compressed
 
+
+# For your organization.
+twitter_username:
+github_username:
+
+# For your author(s).
 authors:
   joshuavaage:
     handle: joshuavaage
     name: Joshua Vaage
+    twitter_username: whaleen
+    github_username:  whaleen
     job_title: Front End Developer
     bio: Spent the 90's supervising the production of action figures on Wall Street. Developed several new methods for charging Roombas with no outside help.
     thumbImg: images/authors/joshuavaage.png
   sarasmith:
     handle: sarasmith
     name: Sara Smith
+    twitter_username:
+    github_username:
     job_title: Co-founder and Product Manager
     bio: Earned praised for her work analyzing squirt guns in Los Angeles, CA. Spent college summers merchandising glucose in Atlantic City, NJ.
     thumbImg: images/authors/sarasmith.png
   kristinaherman:
     handle: kristinaherman
     name: Kristina Herman
+    twitter_username:
+    github_username:
     job_title: Co-founder and Product Manager
     bio: Developed several new methods for reading childrens books in Naples, FL. Was quite successful at getting to know cabbage at university.
     thumbImg: images/authors/kristinaherman.png
   timothykrapel:
     handle: timothykrapel
     name: Timothy Krapel
+    twitter_username:
+    github_username:
     job_title: Co-founder and Product Manager
     bio: Had a brief career getting to know chess sets in Miami, FL. Had some great experience developing pogo sticks in Cuba. In 2008 I was promoting deodorant in Tampa, FL. Spent 2001-2008 creating marketing channels for bagpipes in Deltona, FL.
     thumbImg: images/authors/timothykrapel.png
