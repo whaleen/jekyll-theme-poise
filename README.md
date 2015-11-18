@@ -1,1 +1,1 @@
-This is a a Jekyll theme called Poise.
+This is a a Jekyll theme. It is called Poise.
