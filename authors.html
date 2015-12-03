@@ -15,7 +15,7 @@ menu: main
           <div class="row">
             {% for author in site.authors %}
             <div class="one-third column center test">
-             <img src="{{ site.baseurl }}/{{ author[1].thumbImg }}" class="profile-image" />
+             <img src="{{ site.url }}/{{ author[1].thumbImg }}" class="profile-image" />
              {{ author[1].job_title }}
              {{ author[1].twitter_username }}
              {{ author[1].github_username }}
