@@ -4,11 +4,7 @@ email: joshuavaage@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   A Multi-Author Jekyll theme that is lightweight and simple.
 
-<<<<<<< HEAD
 baseurl: "/" # try not using baseurl or prepending urls with liquid tags.
-=======
-baseurl: "/Poise" # try not using baseurl or prepending urls with liquid tags.
->>>>>>> master
 # Switch (uncomment line for use) for local and remote hosted
 # url: "http://whaleen.github.io/poise" #gh-pages
 url: "http://127.0.0.1:4000" # localhost

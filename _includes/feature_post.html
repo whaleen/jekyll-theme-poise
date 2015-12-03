@@ -14,9 +14,9 @@
 
 <p class="feature-post-excerpt center">{{ post.excerpt }}</p>
 
-<div class="feature-post-author center"><img src="/{{ site.authors[post.author].thumbImg }}" class="profile-image"/> </div>
-<p class="center">by: <a href="/author/{{ site.authors[post.author].handle }}">{{ site.authors[post.author].name }}</a></p>
-<div class="feature-post-button center"><a class="button" href="{{ root_url }}{{ post.url }}">Read</a></div>
+<div class="feature-post-author center"><img src="{{ site.url }}/{{ site.authors[post.author].thumbImg }}" class="profile-image"/> </div>
+<p class="center">by: <a href="{{ site.url }}/author/{{ site.authors[post.author].handle }}">{{ site.authors[post.author].name }}</a></p>
+<div class="feature-post-button center"><a class="button" href="{{ site.url }}/{{ post.url }}">Read</a></div>
 <hr />
 
 </div>

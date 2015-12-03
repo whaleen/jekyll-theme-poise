@@ -13,7 +13,7 @@ layout: default
       <p class="center">{{ site.authors[page.handle].job_title }}</p>
 
       <p class="author-page-bio center">{{ site.authors[page.handle].bio }}</p>
-      <p class="center"><img src="/{{ site.authors[page.handle].thumbImg }}" class="profile-image"/></p>
+      <p class="center"><img src="{{ site.url }}/{{ site.authors[page.handle].thumbImg }}" class="profile-image"/></p>
       <hr />
     </section>
 
@@ -26,7 +26,7 @@ layout: default
             <li>
               <header>
                 <p><time pubdate datetime="{{ p.date }}">{{ p.date | date: "%b %-d, %Y" }}</time></p>
-                <h4><a href="{{ p.url }}">{{ p.title }}</a></h4>
+                <h4><a href="{{ site.url }}{{ p.url }}">{{ p.title }}</a></h4>
               </header>
               <p>{{ p.excerpt }}</p>
               <hr />
