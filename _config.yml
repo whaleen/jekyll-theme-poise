@@ -6,8 +6,8 @@ description: > # this means to ignore newlines until "baseurl:"
 
 baseurl: "/" # try not using baseurl or prepending urls with liquid tags.
 # Switch (uncomment line for use) for local and remote hosted
-# url: "http://whaleen.github.io/poise" #gh-pages
-url: "http://127.0.0.1:4000" # localhost
+url: "http://whaleen.github.io/poise" #gh-pages
+# url: "http://127.0.0.1:4000" # localhost
 
 
 # Build settings
