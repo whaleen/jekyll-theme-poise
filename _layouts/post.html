@@ -10,7 +10,7 @@ layout: default
     <h1 class="post-title center">{{ page.title }}</h1>
     <p class="feature-post-excerpt center">{{ page.excerpt }}</p>
     <p class="post-meta center">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} by:
-<a href="/author/{{ site.authors[page.author].handle }}">{{ site.authors[page.author].name }}</a>
+<a href="{{ site.url }}/author/{{ site.authors[page.author].handle }}">{{ site.authors[page.author].name }}</a>
       {% endif %}</p>
   </header>
   <article class="post-content">
@@ -28,8 +28,8 @@ layout: default
 
   <div class="offset-by-four four columns center">
 
-    <div class="feature-post-author center"><img src="/{{ site.authors[page.author].thumbImg }}" class="profile-image"/> </div>
-    <p class="center">by: <a href="/author/{{ site.authors[page.author].handle }}">{{ site.authors[page.author].name }}</a></p>
+    <div class="feature-post-author center"><img src="{{ site.url }}/{{ site.authors[page.author].thumbImg }}" class="profile-image"/> </div>
+    <p class="center">by: <a href="{{ site.url }}/author/{{ site.authors[page.author].handle }}">{{ site.authors[page.author].name }}</a></p>
     <hr />
   </div>
 </div>
