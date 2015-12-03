@@ -4,7 +4,7 @@
       <div class="row">
 
         <div class="four columns offset-by-four center">
-          <h3 class="footer-heading"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h3>
+          <h3 class="footer-heading"><a href="{{ site.url }}/">{{ site.title }}</a></h3>
 
             <p class="text">{{ site.description }}</p>
 
@@ -14,13 +14,13 @@
             {% for p in pages %}
               {% if p.menu == 'main' %}
                 <li{% if p.url == page.url %} class="active"{% endif %}>
-                   <a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
+                   <a href="{{ site.url }}{{ p.url }}">{{ p.title }}</a>
                 </li>
               {% endif %}
             {% endfor %}
           </ul>
 
-          <p class="rss-subscribe">subscribe to {{ site.title }} <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+          <p class="rss-subscribe">subscribe to {{ site.title }} <a href="{{ "/feed.xml" | prepend: site.url }}">via RSS</a></p>
 
         </div>
     </div>
