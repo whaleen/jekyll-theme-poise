@@ -7,3 +7,4 @@ Goals for this theme have been simple:
 - Make it look attractive
 - Keep CSS file size very small
 - Support for SASS
+- Have fun

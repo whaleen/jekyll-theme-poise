@@ -1,16 +1,14 @@
 ---
 layout: post
-title:  "Typography in Poise"
+title:  "Using Markdown in Poise"
 date:   2015-10-21 18:49:14
 author: joshuavaage
-excerpt: A thin but strong layer of typographic style is poise.  
+excerpt: This is a demonstration.
 ---
-
-#### Headings are centered
 
 Paragraphs are indented. This is common in print and it looks good in Poise due to the horizontally centered nature of the site's design. Without indentations, a sharp vertical line becomes percievable at the left margin of the page. This begins to make the whole page seem unbalanced -- especially when you have long paragraphs.
 
-### A centered and responsive image
+### A centered image
 
 
 {:.center .u-max-full-width}

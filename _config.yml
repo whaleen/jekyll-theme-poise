@@ -3,8 +3,9 @@ title: Poise
 email: joshuavaage@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   A Multi-Author Jekyll theme that is lightweight, simple to use and hopefully very readable.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://whaleen.github.io/Poise/" # the base hostname & protocol for your site
+baseurl: "/poise" # the subpath of your site, e.g. /blog/
+url: "http://whaleen.github.io/poise" # the base hostname & protocol for your site
+#url:              http://127.0.0.1:4000
 
 # Build settings
 markdown: kramdown
