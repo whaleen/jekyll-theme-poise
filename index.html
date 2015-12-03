@@ -16,16 +16,16 @@ layout: default
         <h3>Earlier Posts</h3>
         <ul class="earler-posts">
           {% for post in site.posts offset: 1 limit: 4 %}
-          <li><h5><a href="{{ post.url }}">{{ post.title }}</a></h5>
+          <li><h5><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h5>
             <p>{{ post.excerpt }}</p>
-            <img src="/{{ site.authors[post.author].thumbImg }}" class="earlier-posts-profile-image"/><br />
-            by: <a href="/author/{{ site.authors[post.author].handle }}">{{ site.authors[post.author].name }}</a>
+            <img src="{{ site.url }}/{{ site.authors[post.author].thumbImg }}" class="earlier-posts-profile-image"/><br />
+            by: <a href="{{ site.url }}/author/{{ site.authors[post.author].handle }}">{{ site.authors[post.author].name }}</a>
             <hr />
           </li>
 
           {% endfor %}
 
-          <li><a href="/archive/">Archive</a>
+          <li><a href="{{ site.url }}/archive/">Archive</a>
         </ul>
       </div>
 
